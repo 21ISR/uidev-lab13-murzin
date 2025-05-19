@@ -11,6 +11,7 @@ html {
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
     font-family: sans-serif;
+    font-size: 62.5%;
 }
 
 body,
@@ -32,8 +33,12 @@ ol[role="list"] {
 }
 
 body {
+    display: flex;
+    justify-content: center;
     min-height: 100vh;
     line-height: 1.5;
+    font-size: 1.6rem;
+    
 }
 
 h1,
@@ -80,6 +85,13 @@ textarea:not([rows]) {
     scroll-margin-block: 5ex;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    min-height: 100lvh;
+    width:100%;
+}
+
 .content {
     background: #020024;
     background: linear-gradient(
@@ -105,3 +117,47 @@ textarea:not([rows]) {
     border-radius: 1rem;
     background-color: black;
 }
+
+@media screen and (max-width: 1440px) {
+    html{
+        font-size: 80%;
+    }
+
+    .content{
+        max-width: 1440px;
+        min-width: 1040px;
+    }
+} 
+
+@media screen and (max-width: 1024px){
+    html{
+        font-size: 65%;
+    }
+
+    .content{
+        max-width: 1030px;
+        min-width: 770px;
+    }
+} 
+
+@media screen and (max-width: 768px){
+    html{
+        font-size: 60%;
+    }
+
+    .content{
+        max-width: 770px;
+        min-width: 480px;
+    }
+} 
+
+@media screen and (max-width: 420px){
+    html{
+        font-size: 50%;
+    }
+
+    .content{
+        max-width: 440px;
+        min-width: 300px;
+    }
+} 
